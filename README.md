@@ -32,3 +32,9 @@ cd posts-dashboard
 npm install
 npm run dev
 ```
+
+---
+
+## Preview
+
+![Posts Dashboard Screenshot](./assets/preview.png)
