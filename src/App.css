@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: whitesmoke;
+}
+
+.app {
+	max-width: 1200px;
+	margin: auto;
+	padding: 50px 20px;
+}
+
+.title {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+/* Card */
+
+.card {
+	background: #f8f9fb;
+	border-radius: 12px;
+	padding: 20px;
+	position: relative;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	transition: all 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.close-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: transparent;
+	border: none;
+	color: #ff6b6b;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.card-text {
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 10px;
+}
+
+.card-date {
+	font-size: 12px;
+	color: #aaa;
+	margin-bottom: 15px;
+}
+
+.card-image {
+	width: 100%;
+	border-radius: 8px;
+	height: 150px;
+	object-fit: cover;
+}
+
+/* Pagination */
+
+.pagination {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.pagination button {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: none;
+	background: #d0d5db;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.pagination button.active {
+	background: white;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pagination button:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
